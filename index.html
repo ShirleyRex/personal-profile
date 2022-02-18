@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirley's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3><a href="#home">ShirleyRex</a></h3>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav-item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav-item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav-item"><a href="cv/SHIRLEY ABAEGBU.pdf" target="_blank"  class="nav__link">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Shirley Abaegbu</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">A Frontend Web Developer</p>
+        <img src="images/img1.jpeg" alt="a picture of Shirley smiling" class="intro__img">
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">A Little Bit About Me</h2>
+        <p class="section__subtitle section__subtitle--about">Frontend Dev based in Lagos, Nigeria</p>
+           
+           <div class="about-me__body">
+               <p>I am a Frontend Developer passionate about the tech world and how to help people through it. I love building open and inclusive communities, I do this through the Open Source community Africa where I currently volunteer as a Chapter co-lead.</p>
+               <p>I have background in Mathematics and Business Consulting. As a Business Consultant, I was thoroughly trained in people and program management, and as a Mathematics graduate, I have the ability to be a critical thinker and a problem solver. This background partly influenced my decision to developing interest in becoming a frontend developer, where I can utilise my knowledge properly.</p>
+           </div>
+           
+           <img src="images/img2.jpeg" alt="Shirley standing next to a chair" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="Eduford/index.html" class="portfolio__item">
+                    <img src="images/eduford-test.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="people-counting-app/index.html" class="portfolio__item">
+                    <img src="images/people-counting-app.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="reponsive-ui-using-html-&-css/index.html" class="portfolio__item">
+                    <img src="images/gaming-site.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="css-flexbox/index.html" class="portfolio__item">
+                    <img src="images/fintech-site.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="blog-website/index.html" class="portfolio__item">
+                    <img src="images/blog-website.png" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:shirley.abaegbu@gmail.com" class="footer__link">shirley.abaegbu@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/shirley-abaegbu/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/rex_shirley">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ShirleyRex/">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/shirley_rex/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>

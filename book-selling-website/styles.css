@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,-1),rgba(0,0,0,-1)),url(/book-selling-website/images/cloudy-city.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 40px 200px;
+}
+
+.nav-logo {
+    cursor: pointer;
+}
+
+.nav-logo a {
+    color: #FF2658;
+    text-decoration: none;
+    font-family: 'Pacifico', 'cursive';
+    font-style: oblique;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-links ul {
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+.nav-links a {
+    color: #000;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #FF2658;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links .ul-2 {
+    float: right;
+}
+
+.nav-links .ul-2 li {
+    padding: 8px 8px;
+}
+
+/* Header */
+
+.header-content {
+    font-family: 'Times New Roman';
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 150px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.header-content h2 {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.header-content h2 span {
+    font-weight: 700;
+}
+
+.header-content p {
+    font-size: 2vmin;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.ctn {
+    padding: 15px 50px;
+    font-size: 25px;
+    background: #FF2658;
+    border-radius: 30px;
+    color: #f5f5f5;
+}
+
+.search {
+    margin-top: 100px;
+    width: 80vw;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-left: 150px;
+    box-shadow: 12px 12px 16px 12px rgba(0, 0, 0, 0.07);
+}
+
+.search > i {
+    font-size: 30px;
+    color: #FF2658;
+}
+
+
+.search > input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.title {
+    font-family: 'Times New Roman';
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.latest-offers img {
+    width: 200px;
+}
+
+.title h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.title p {
+    font-size: 2vmin;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /*grid-template-columns: 66.67% 33.33%;
+    grid-row: 2;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    */
+}
+
+.common {
+    border: 1px solid purple;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.common .ctn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 14px;
+}
+
+.brown {
+    background-color: #BB8E51;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.brown p {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+    margin: 0 50px 0 50px;
+}
+
+.brown img {
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.pink {
+    background-color: #ffc0cb;
+    grid-column: 3 ;
+    grid-row: 1;
+}
+
+.red {
+    background-color: #FF2658;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.blue {
+    background-color: aqua;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.purple {
+    background-color: violet;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+.best-offers {
+    margin-top: 100px;
+    background: #eee;
+}
+
+.title-2 h2 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 200px;
+    padding-top: 80px;
+    line-height: 30px;
+}
+
+.title-2 p {
+    font-size: 2vmin;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.title-2 .ctn {
+    font-size: 14px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.title-2 img {
+    margin-left: 50%;
+    margin-top: -500px;
+}
+
+
+/*
+
+.best-offers img {
+    width: 200px;
+    float: right;
+}
+
+.best-offers {
+    margin-top: 50px;
+    background-color: #EEEEEE;
+    font-family: 'Times New Roman';
+    justify-content: center;
+    text-align: left;
+    line-height: 30px;
+}
+
+.title-2 {
+    
+    
+}
+
+.title-2 h2 {
+    margin-top: 150px;
+    margin-left: 200px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.title-2 p {
+    font-size: 2vmin;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
